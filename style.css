@@ -23,3 +23,18 @@ h1 {
     border:2px solid darkgreen;
 }
 
+.dealer{
+    display: flex;
+}
+
+.dealer div {
+    margin: .1em
+}
+
+.player{
+    display: flex;
+}
+
+.player div {
+    margin: .1em
+}
