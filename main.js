@@ -4,6 +4,7 @@ const playerHand = player.querySelectorAll('.card');
 const dealer = document.querySelector('.dealer');
 const dealerHand = dealer.querySelectorAll('.card');
 
+const cards = document.querySelectorAll('.card');
 
 
 
@@ -35,16 +36,15 @@ function stand() {
     } else {
         alert('You Lose!');
     }
+    clearCards();
 }
 
-function removeCards() {
+function clearCards() {
     // var cards = document.getElementsByClassName('.card');
-    // while (cards.length > 0) {
-    //     cards[0].parentNode.removeChild(cards[0]);
-    // }
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].parentNode.removeChild(cards[i]);
+    }
 
-    var elements = document.querySelectorAll('.card');
-    console.log(elements.length);
     // while (elements.length > 0) {
     //     console.log(elements[0])//.parentNode.removeChild(elements[0]);
     // }
